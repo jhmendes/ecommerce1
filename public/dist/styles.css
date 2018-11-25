@@ -56,3 +56,56 @@ html {
 body {
   background-color: #E7E8ED; }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #D3D3D3; }
+  .nav__logo {
+    font-size: 3rem;
+    font-weight: 700; }
+  .nav__icon {
+    width: 1.2rem;
+    height: .2rem;
+    background-color: #000;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    margin-right: 6rem; }
+    .nav__icon:before {
+      content: "";
+      width: 2.3rem;
+      height: .2rem;
+      background-color: #000;
+      display: inline-block;
+      position: absolute;
+      top: 6px; }
+    .nav__icon:after {
+      content: "";
+      width: 1.2rem;
+      height: .2rem;
+      background-color: #000;
+      display: inline-block;
+      position: absolute;
+      top: 12px;
+      left: 0; }
+  .nav__item {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 0 2rem; }
+  .nav__link--yellow {
+    text-shadow: 0 5px 12px #ECD17E; }
+  .nav__utility-item {
+    font-size: 1.4rem;
+    display: inline;
+    padding: 0 2rem; }
+  .nav__link:link, .nav__utility-item-link:link {
+    text-decoration: none;
+    color: #000; }
+  .nav__link:hover, .nav__utility-item-link:hover {
+    color: #ECD17E; }
+
+.fas {
+  padding-right: 5px; }
+
