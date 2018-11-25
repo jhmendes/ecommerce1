@@ -1,0 +1,41 @@
+.featured {
+    width: 60%;
+    margin: 0 auto; 
+    margin-top: 6.5rem;
+
+    &__breadcrumbs {
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
+    }
+
+    &__links li {
+        display: inline-block;
+        padding-right: 1rem;
+
+        &:after {
+            content: "/";
+            padding: 0 5px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        &:link, &:visited {
+            color: #000;
+        }
+
+        &:hover {
+            color: $m3;
+        }
+    }
+
+    &__item {
+        display: flex;
+        &-info {
+            display: flex;
+            flex-direction: column;
+        
+            
+        }
+    }
+}

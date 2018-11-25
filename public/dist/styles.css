@@ -109,3 +109,28 @@ body {
 .fas {
   padding-right: 5px; }
 
+.featured {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 6.5rem; }
+  .featured__breadcrumbs {
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+  .featured__links li {
+    display: inline-block;
+    padding-right: 1rem; }
+    .featured__links li:after {
+      content: "/";
+      padding: 0 5px; }
+  .featured__link {
+    text-decoration: none; }
+    .featured__link:link, .featured__link:visited {
+      color: #000; }
+    .featured__link:hover {
+      color: #ECD17E; }
+  .featured__item {
+    display: flex; }
+    .featured__item-info {
+      display: flex;
+      flex-direction: column; }
+
