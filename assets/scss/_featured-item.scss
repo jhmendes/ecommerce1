@@ -1,10 +1,11 @@
 .featured {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 6.5rem;
 
     &__breadcrumbs {
         font-size: 1.2rem;
+        font-weight: 700;
         margin-bottom: 5rem;
     }
 
@@ -21,7 +22,9 @@
             content: "";
         }
 
-
+        &:last-child > a {
+            color: $m3;
+        }
     }
 
 
@@ -60,7 +63,7 @@
 
             justify-content: space-between;
             flex-basis: 50%;
-            padding: 5rem 7.5rem;
+            padding: 5rem 8rem;
         }
 
 
@@ -92,6 +95,7 @@
         font-weight: 700;
         letter-spacing: 8px;
         margin-bottom: 4rem;
+        text-transform: uppercase;
     }
 
     //BOX 2
@@ -101,13 +105,18 @@
     &__item-quantity {
         font-size: 2rem;
         padding: 1.5rem;
-        border: 1px solid black;
+        border: 1px solid $m4;
         display: flex;
         justify-content: space-around;
         font-weight: 700;
-        width: 50%;
+        width: 35%;
         margin-bottom: 4rem;
 
+    }
+
+    &__item-buttons {
+        font-size: 1.3rem;
+        font-weight: 700;
     }
 
     &__item-box2 a:link,
@@ -120,15 +129,15 @@
     &__item-box2-btn {
         background-color: #fff;
         color: #000;
-        padding: 1.5rem 3rem;
+        padding: 2.3rem 3rem;
     }
 
     &__item-box2-btn.active {
         background-color: $charcoal;
-        padding: 3rem;
+        padding: 3rem 4.5rem;
         color: $m1;
         box-shadow: 0px 2rem 5rem -2rem #000;
-
+        text-transform: uppercase;
     }
 
     //Social Sharing links 
@@ -148,7 +157,9 @@
     }
 
     //DESCRIPTION BOX
-    &__description {}
+    &__description {
+        margin-bottom: 12rem;
+    }
 
     &__description-links {
         display: flex;
@@ -156,8 +167,19 @@
         text-align: center;
         font-size: 1.4rem;
         margin-bottom: 3rem;
-        border-bottom: 3px solid black;
-        padding: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        li {
+            flex-basis: 33.3%;
+            padding: 2rem;
+            border-bottom: 2px solid $m4;
+        }
+
+        & li:first-child {
+            border-bottom: 2px solid #000;
+
+        }
     }
 
     &__description-links a:link,
