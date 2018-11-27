@@ -48,7 +48,7 @@
     }
 
     &__link--yellow {
-        text-shadow: 0 5px 12px $m3;
+        background: linear-gradient($m1 0%, $m3 100%);
     }
 
     &__utility-item {
