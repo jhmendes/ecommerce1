@@ -1,0 +1,48 @@
+.products {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 8rem; 
+    margin-bottom: 8rem;
+
+    &__title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 7rem;
+    }
+
+    &__panels {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        border: 1px solid black;
+        
+
+        img {
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__panel {
+        border: 1px solid black;
+        padding: 8rem 0;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+
+    &__price {
+        font-size: 1.2rem;
+    }
+
+    &__sale-tag {
+        background-color: $m3;
+        text-transform: uppercase;
+        padding: 1.2rem 0;
+        color: #fff;
+    }
+}
