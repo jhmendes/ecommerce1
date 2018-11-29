@@ -135,8 +135,13 @@ body {
       color: #ECD17E; }
   .featured__item {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10rem; }
+    flex-direction: column;
+    margin-bottom: 7rem; }
+    @media screen and (min-width: 1200px) {
+      .featured__item {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10rem; } }
     .featured__item img {
       box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75);
       -webkit-box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75);
@@ -145,8 +150,13 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      flex-basis: 50%;
-      padding: 5rem 8rem; }
+      flex-basis: 33%;
+      padding: 5rem 0; }
+    .featured__item-box1 {
+      margin-bottom: 3rem; }
+      @media screen and (min-width: 1200px) {
+        .featured__item-box1 {
+          margin-bottom: 0; } }
     .featured__item-review {
       font-size: 1.3rem;
       margin-bottom: 2.5rem; }
@@ -176,7 +186,7 @@ body {
     width: 35%;
     margin-bottom: 4rem; }
   .featured__item-buttons {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700; }
   .featured__item-box2 a:link,
   .featured__item-box2 a:visited {
@@ -285,10 +295,24 @@ body {
   margin-bottom: 8rem; }
   .newsletter__content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
     margin: 0 auto;
-    justify-content: space-around;
+    text-align: center;
     padding: 10rem 0; }
+    @media screen and (min-width: 1200px) {
+      .newsletter__content {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left; } }
+  .newsletter__join {
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 1200px) {
+      .newsletter__join {
+        margin-bottom: 0; } }
   .newsletter__title {
     font-size: 3.6rem;
     font-weight: 700;
@@ -310,8 +334,11 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.2rem;
-    float: right;
+    float: left;
     font-weight: 700; }
+    @media screen and (min-width: 1200px) {
+      .newsletter__btn {
+        float: right; } }
 
 .footer__container {
   width: 60%;

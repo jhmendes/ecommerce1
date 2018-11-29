@@ -48,8 +48,15 @@
 
     &__item {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 10rem;
+        // justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 7rem;
+
+        @media screen and (min-width: $bp-large) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 10rem;
+        }
 
         img {
             box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75);
@@ -62,12 +69,20 @@
             flex-direction: column;
 
             justify-content: space-between;
-            flex-basis: 50%;
-            padding: 5rem 8rem;
+            flex-basis: 33%;
+            padding: 5rem 0;
         }
 
 
         //BOX 1
+
+        &-box1 {
+            margin-bottom: 3rem;
+
+            @media screen and (min-width: $bp-large) {
+               margin-bottom: 0;
+            }
+        }
         &-review {
             font-size: 1.3rem;
             margin-bottom: 2.5rem;
@@ -87,6 +102,7 @@
             text-decoration: line-through;
             font-weight: 300;
             color: $m4;
+           
         }
     }
 
@@ -115,7 +131,7 @@
     }
 
     &__item-buttons {
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 700;
     }
 
