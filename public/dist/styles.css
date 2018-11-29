@@ -65,6 +65,11 @@ body {
   .nav__logo {
     font-size: 3rem;
     font-weight: 700; }
+  .nav__links {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .nav__links {
+        display: block; } }
   .nav__icon {
     width: 1.2rem;
     height: .2rem;
@@ -145,7 +150,11 @@ body {
     .featured__item img {
       box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75);
       -webkit-box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75);
-      -moz-box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75); }
+      -moz-box-shadow: 0px 22px 49px -15px rgba(87, 86, 86, 0.75);
+      height: 300px; }
+      @media screen and (min-width: 768px) {
+        .featured__item img {
+          height: 100%; } }
     .featured__item-info {
       display: flex;
       flex-direction: column;
@@ -345,13 +354,19 @@ body {
   margin: 0 auto; }
   .footer__container-2 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 5rem; }
+    @media screen and (min-width: 1200px) {
+      .footer__container-2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row; } }
 
 .footer__links {
   display: flex;
   flex-basis: 45%;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 5rem; }
 
 .footer__list-title {
   font-size: 1.5rem;
@@ -365,6 +380,9 @@ body {
   .footer__list-links a:link, .footer__list-links a:visited {
     text-decoration: none;
     color: #36373B; }
+
+.footer__contact {
+  text-align: right; }
 
 .footer__address {
   font-size: 2rem;
