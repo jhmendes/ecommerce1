@@ -47,9 +47,13 @@
     &__email {
         display: block;
         background-color: $m5;
-        font-size: 4rem;
+        font-size: 3rem;
         border-bottom: 2px solid black;
         outline: none;
+
+        @media screen and (min-width: $bp-small) {
+            font-size: 4rem;
+         }
     }
 
     &__btn {

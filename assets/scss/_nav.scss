@@ -59,6 +59,13 @@
         background: linear-gradient($m1 0%, $m3 100%);
     }
 
+    &__utility {
+        display: none;
+        @media screen and (min-width: $bp-small) {
+            display: block;
+         }
+    }
+
     &__utility-item {
         font-size: 1.4rem; 
         display: inline;

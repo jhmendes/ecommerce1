@@ -1,7 +1,7 @@
 .products {
     width: 70%;
     margin: 0 auto;
-    margin-top: 8rem; 
+    margin-top: 8rem;
     margin-bottom: 14rem;
 
     &__title {
@@ -9,7 +9,7 @@
         text-transform: uppercase;
         text-align: center;
         width: 100%;
-        
+
         margin-bottom: 7rem;
         letter-spacing: 2px;
     }
@@ -20,33 +20,40 @@
     }
 
     &__panels {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 100%;
         text-align: center;
-        
-        // &:before {
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-        //     content: "<";
-        //     border: 1px solid black;
-        //     vertical-align: center;
-        //     padding: 0 2rem;
-        // }
-            .fa-angle-left, .fa-angle-right {
-                align-self: center;
-                font-size: 1.7rem;
-                color: $m4;
-                padding: 2.5rem 1rem;
+        grid-gap: 3rem;
+
+        @media screen and (min-width: $bp-small) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .fa-angle-left,
+        .fa-angle-right {
+            align-self: center;
+            font-size: 1.7rem;
+            color: $m4;
+            padding: 2.5rem 1rem;
+            display: none;
+
+
+            @media screen and (min-width: $bp-small) {
+                display: inline-block;
             }
 
-            .fa-angle-right {
-                border-right: 1px solid $m4;
-            }
+        }
 
-            .fa-angle-left {
-                border-left: 1px solid $m4;
-            }
+        .fa-angle-right {
+            border-right: 1px solid $m4;
+        }
+
+        .fa-angle-left {
+            border-left: 1px solid $m4;
+        }
+
         img {
             margin-bottom: 7rem;
             width: 250px;
@@ -55,7 +62,7 @@
     }
 
     &__panel {
-        
+
         padding: 7rem 0;
         font-weight: 700;
         letter-spacing: 2px;

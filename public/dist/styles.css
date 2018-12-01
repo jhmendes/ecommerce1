@@ -101,6 +101,11 @@ body {
     padding: 0 2rem; }
   .nav__link--yellow {
     background: linear-gradient(#E7E8ED 0%, #ECD17E 100%); }
+  .nav__utility {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .nav__utility {
+        display: block; } }
   .nav__utility-item {
     font-size: 1.4rem;
     display: inline;
@@ -261,14 +266,25 @@ body {
     width: 5rem;
     margin-bottom: 1.3rem; }
   .products__panels {
-    display: flex;
-    justify-content: space-around;
-    text-align: center; }
-    .products__panels .fa-angle-left, .products__panels .fa-angle-right {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    grid-gap: 3rem; }
+    @media screen and (min-width: 768px) {
+      .products__panels {
+        display: flex;
+        justify-content: space-around; } }
+    .products__panels .fa-angle-left,
+    .products__panels .fa-angle-right {
       align-self: center;
       font-size: 1.7rem;
       color: #B8BCC8;
-      padding: 2.5rem 1rem; }
+      padding: 2.5rem 1rem;
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .products__panels .fa-angle-left,
+        .products__panels .fa-angle-right {
+          display: inline-block; } }
     .products__panels .fa-angle-right {
       border-right: 1px solid #B8BCC8; }
     .products__panels .fa-angle-left {
@@ -332,9 +348,12 @@ body {
   .newsletter__email {
     display: block;
     background-color: #CBE0F1;
-    font-size: 4rem;
+    font-size: 3rem;
     border-bottom: 2px solid black;
     outline: none; }
+    @media screen and (min-width: 768px) {
+      .newsletter__email {
+        font-size: 4rem; } }
   .newsletter__btn {
     background-color: #36373B;
     padding: 2.5rem 4.5rem;
@@ -402,13 +421,24 @@ body {
   font-size: 1.3rem;
   display: flex;
   justify-content: space-evenly;
-  padding: 3rem 0;
-  border-top: 1px solid lightgrey; }
+  padding: 3rem 2.5rem;
+  border-top: 1px solid lightgrey;
+  flex-direction: column;
+  text-align: center; }
   .footer__copyright-text {
     color: #B8BCC8; }
+  @media screen and (min-width: 768px) {
+    .footer__copyright {
+      flex-direction: row;
+      padding: 3rem 0; } }
 
 .footer__social {
-  display: flex; }
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2rem; }
+  @media screen and (min-width: 768px) {
+    .footer__social {
+      margin: 0; } }
   .footer__social li {
     padding: 0 1rem;
     color: #B8BCC8; }

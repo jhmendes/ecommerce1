@@ -85,19 +85,28 @@
         font-size: 1.3rem;
         display: flex;
         justify-content: space-evenly;
-        padding: 3rem 0;
+        padding: 3rem 2.5rem;
         border-top: 1px solid lightgrey;
+        flex-direction: column;
+        text-align: center;
         &-text {
             color: $m4;
         }
 
-        @media screen and (min-width: $bp-large) {
-           
+        @media screen and (min-width: $bp-small) {
+           flex-direction: row;
+           padding: 3rem 0;
         }
     }
 
     &__social {
         display: flex;
+        margin: 0 auto;
+        margin-top: 2rem;
+
+        @media screen and (min-width: $bp-small) {
+          margin: 0;
+         }
         li {
             padding: 0 1rem;
             color: $m4;
